@@ -29,7 +29,7 @@ describe('Can open Rockets and Dragons pages', () => {
     expect(wrapper.find(Dragon)).toHaveLength(1)
   })
 
-  it('if `Rocket` is clicked `Dragons` does cannot show', () => {
+  it('if `Rocket` is clicked `Dragons`cannot show', () => {
     const wrapper = shallow(<App />)
     const dragonsButton = wrapper.find('#Dragons')
     const rocketsButton = wrapper.find('#Rockets')
@@ -37,6 +37,16 @@ describe('Can open Rockets and Dragons pages', () => {
     rocketsButton.simulate('click')
 
     expect(wrapper.find(Dragon)).toHaveLength(0)
+  })
+
+  it('if `Dragon` is clicked `Rockets` cannot show', () => {
+    const wrapper = shallow(<App />)
+    const rocketsButton = wrapper.find('#Rockets')
+    const dragonsButton = wrapper.find('#Dragons')
+    rocketsButton.simulate('click')
+    dragonsButton.simulate('click')
+
+    expect(wrapper.find(Rocket)).toHaveLength(0)
   })
 })
 

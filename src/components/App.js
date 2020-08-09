@@ -13,6 +13,7 @@ function App () {
 
   const handleShowDragons = () => {
     setShowDragons(true)
+    setShowRockets(false)
   }
 
   return (
