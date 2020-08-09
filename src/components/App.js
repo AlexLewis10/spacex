@@ -1,6 +1,6 @@
 import React, { useState }from 'react'
 import Rockets from '../components/Rockets'
-import Dragon from '../components/Dragon'
+import Dragons from './Dragons'
 
 function App () {
   const [showRockets, setShowRockets] = useState(false)
@@ -22,7 +22,7 @@ function App () {
       <button id='Rockets' onClick={handleShowRockets}>Rockets</button>
       <button id='Dragons' onClick={handleShowDragons}>Dragons</button>
       {showRockets ? <Rockets /> : null}
-      {showDragons ? <Dragon /> : null}
+      {showDragons ? <Dragons /> : null}
     </div>
   )
 }

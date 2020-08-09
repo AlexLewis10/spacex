@@ -2,7 +2,7 @@ import React from 'react'
 import App from '../components/App'
 import { shallow } from 'enzyme'
 import Rockets from '../components/Rockets'
-import Dragon from '../components/Dragon'
+import Dragons from '../components/Dragons'
 
 describe('App', () => {
   it('renders with the heading SpaceX', () => {
@@ -26,7 +26,7 @@ describe('Can open Rockets and Dragons pages', () => {
     const button = wrapper.find('#Dragons')
     button.simulate('click')
 
-    expect(wrapper.find(Dragon)).toHaveLength(1)
+    expect(wrapper.find(Dragons)).toHaveLength(1)
   })
 
   it('if `Rockets` is clicked `Dragons`cannot show', () => {
@@ -36,10 +36,10 @@ describe('Can open Rockets and Dragons pages', () => {
     dragonsButton.simulate('click')
     rocketsButton.simulate('click')
 
-    expect(wrapper.find(Dragon)).toHaveLength(0)
+    expect(wrapper.find(Dragons)).toHaveLength(0)
   })
 
-  it('if `Dragon` is clicked `Rockets` cannot show', () => {
+  it('if `Dragons` is clicked `Rockets` cannot show', () => {
     const wrapper = shallow(<App />)
     const rocketsButton = wrapper.find('#Rockets')
     const dragonsButton = wrapper.find('#Dragons')
