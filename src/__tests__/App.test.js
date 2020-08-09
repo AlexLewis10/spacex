@@ -9,3 +9,4 @@ describe('App', () => {
     expect(wrapper).toContainReact(<h2>SpaceX</h2>)
   })
 })
+
