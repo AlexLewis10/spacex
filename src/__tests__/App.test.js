@@ -12,7 +12,7 @@ describe('App', () => {
 })
 
 describe('App can open Rockets page', () => {
-  xit('clicking `Rockets` button shows rockets', () => {
+  it('clicking `Rockets` button shows rockets', () => {
     const wrapper = shallow(<App />)
     const button = wrapper.find('#Rockets')
     button.simulate('click')
