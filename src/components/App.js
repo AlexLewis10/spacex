@@ -17,7 +17,7 @@ function App () {
   return (
     <div>
       <h2>SpaceX</h2>
-      <button id='Rockets' onClick={() => {handleShowRockets()}}>Rockets</button>
+      <button id='Rockets' onClick={handleShowRockets}>Rockets</button>
       <button id='Dragons' onClick={handleShowDragons}>Dragons</button>
       {showRockets ? <Rocket /> : null}
       {showDragons ? <Dragon /> : null}
