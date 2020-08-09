@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Rocket () {
+function Rockets () {
 
   return (
     <div>
-      <h3>Rocket</h3>
+      <h3>Rockets</h3>
     </div>
   )
 }
 
-export default Rocket
+export default Rockets
