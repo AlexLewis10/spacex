@@ -4,6 +4,31 @@ body {
     text-align: center;
     color: #495867;
     margin: auto;
-    width: 80%;
-    height: 100%;
+    width: 80vw;
+    height: 100vh;
 }
+
+#landing-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #bdd5ea;
+  height: 20vh;
+}
+
+#navbar {
+  height: 50%;
+  width: 100%;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 50%;
+}
+
+.select-btn {
+  height: 100%;
+  width: 50%
+}
+

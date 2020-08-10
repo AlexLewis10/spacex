@@ -46,11 +46,15 @@ function App () {
 
   return (
     <div>
-      <h2>SpaceX</h2>
-      <button id='Rockets' onClick={handleShowRockets}>Rockets</button>
-      <button id='Dragons' onClick={handleShowDragons}>Dragons</button>
-      {showRockets ? <Rockets rockets={rockets} /> : null}
-      {showDragons ? <Dragons /> : null}
+      <div id='landing-section'>
+        <h2>SpaceX</h2>
+        <div id='navbar'>
+          <button className='select-btn' id='Rockets' onClick={handleShowRockets}>Rockets</button>
+          <button className='select-btn' id='Dragons' onClick={handleShowDragons}>Dragons</button>
+        </div>
+      </div>
+        {showRockets ? <Rockets rockets={rockets} /> : null}
+        {showDragons ? <Dragons /> : null}
     </div>
   )
 }
