@@ -15,7 +15,6 @@ function Rocket ({
 
   return (
     <div>
-      <p>Rocket</p>
       <p>{name}</p>
       <p>{height}</p>
       <p>{mass}</p>

@@ -2,6 +2,7 @@ import React, { useState, useEffect }from 'react'
 import Rockets from '../components/Rockets'
 import Dragons from './Dragons'
 import Axios from 'axios'
+import './App.css'
 
 function App () {
   const [showRockets, setShowRockets] = useState(false)
