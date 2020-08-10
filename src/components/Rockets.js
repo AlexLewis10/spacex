@@ -40,13 +40,6 @@ function Rockets ( { rockets } ) {
         height={rocket.height.meters}
         mass={rocket.mass.kg}
         getFullRocketInfo={getFullRocketInfo}
-        // engines={rocket.engines.thrust_sea_level.kN}
-        // fuel={rocket.engines.propellant_1}
-        // fuel2={rocket.engines.propellant_2}
-        // wikipedia={rocket.wikipedia}
-        // description={rocket.description}
-        // img1={rocket.flickr_images[0]}
-        // img2={rocket.flickr_images[1]}
       /> 
     }) : null
   }
