@@ -4,10 +4,20 @@ import Rocket from './Rocket'
 
 function Rockets ( { rockets } ) {
   const [rocketsInfo, setRocketsInfo] = useState(null)
+  const [fullView, setFullView] = useState(false)
 
   useEffect(() => {
-      setRocketsInfo(JSON.parse(rockets))
+    setRocketsInfo(JSON.parse(rockets))
     }, [rockets])
+
+  const getFullRocketInfo = (name) => {
+    rocketsInfo.filter((rocket) => {
+      if (rocket.rocket_name === name) {
+        setFullView(<p>Hello</p>)
+      }
+      return null
+    })
+  }
 
   const displayRockets = () => {
     const className = 'rocket'
@@ -18,6 +28,7 @@ function Rockets ( { rockets } ) {
         name={rocket.rocket_name}
         height={rocket.height.meters}
         mass={rocket.mass.kg}
+        getFullRocketInfo={getFullRocketInfo}
         // engines={rocket.engines.thrust_sea_level.kN}
         // fuel={rocket.engines.propellant_1}
         // fuel2={rocket.engines.propellant_2}
@@ -33,6 +44,7 @@ function Rockets ( { rockets } ) {
     <div className='grid-container'>
       {/* <h3>Rockets</h3> */}
       {displayRockets()}
+      { fullView ? fullView : null }
     </div>
   )
 }

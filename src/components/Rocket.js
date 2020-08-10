@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import './Rocket.css'
 
-function Rocket ( { 
-  name, 
-  height, 
-  mass, 
+function Rocket (props
+  // name, 
+  // height, 
+  // mass,
   // engines, 
   // fuel, 
   // fuel2, 
@@ -12,12 +12,13 @@ function Rocket ( {
   // description, 
   // img1, 
   // img2 
-  } ) {
+   ) {
 
   const [fullView, setFullView] = useState(false)
 
   const displayFullView = () => {
     setFullView(true)
+    props.getFullRocketInfo(props.name)
   }
 
   const showFullView = () => {
@@ -25,10 +26,11 @@ function Rocket ( {
   }
 
   return (
+    
     <div className='rocket'>
-      <p>{name}</p>
-      <p>{height}</p>
-      <p>{mass}</p>
+      <p>{props.name}</p>
+      <p>{props.height}</p>
+      <p>{props.mass}</p>
       <button onClick={displayFullView}>More info</button>
       { fullView ? showFullView() : null }
       {/* <p>{engines}</p>
