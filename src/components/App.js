@@ -49,12 +49,23 @@ function App () {
       <div id='landing-section'>
         <h2>SpaceX</h2>
         <div id='navbar'>
-          <button className='select-btn' id='Rockets' onClick={handleShowRockets}>Rockets</button>
-          <button className='select-btn' id='Dragons' onClick={handleShowDragons}>Dragons</button>
+          <button 
+            className='select-btn' 
+            id='Rockets' onClick={handleShowRockets}
+            >Rockets
+          </button>
+          <button 
+            className='select-btn' 
+            id='Dragons' 
+            onClick={handleShowDragons}
+            >Dragons
+          </button>
         </div>
       </div>
+      <div id='main-body'>
         {showRockets ? <Rockets rockets={rockets} /> : null}
         {showDragons ? <Dragons /> : null}
+      </div>
     </div>
   )
 }

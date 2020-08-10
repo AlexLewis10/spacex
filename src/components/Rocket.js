@@ -7,10 +7,10 @@ function Rocket ({
   engines, 
   fuel, 
   fuel2, 
-  wikipedia, 
-  description, 
-  img1, 
-  img2 
+  // wikipedia, 
+  // description, 
+  // img1, 
+  // img2 
   }) {
 
   return (
@@ -21,10 +21,10 @@ function Rocket ({
       <p>{engines}</p>
       <p>{fuel}</p>
       <p>{fuel2}</p>
-      <p>{wikipedia}</p>
+      {/* <p>{wikipedia}</p>
       <p>{description}</p>
       <p>{img1}</p>
-      <p>{img2}</p>
+      <p>{img2}</p> */}
     </div>
   )
 }

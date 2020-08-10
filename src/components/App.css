@@ -45,3 +45,9 @@ h2 {
   background-color: #f7f7ff;
 }
 
+#main-body {
+  background-color: pink;
+  width: 100%;
+  height: 80vh;
+}
+

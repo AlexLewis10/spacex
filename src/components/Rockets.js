@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './Rockets.css'
 import Rocket from './Rocket'
 
 function Rockets ( { rockets } ) {
@@ -18,16 +19,16 @@ function Rockets ( { rockets } ) {
         engines={rocket.engines.thrust_sea_level.kN}
         fuel={rocket.engines.propellant_1}
         fuel2={rocket.engines.propellant_2}
-        wikipedia={rocket.wikipedia}
-        description={rocket.description}
-        img1={rocket.flickr_images[0]}
-        img2={rocket.flickr_images[1]}
+        // wikipedia={rocket.wikipedia}
+        // description={rocket.description}
+        // img1={rocket.flickr_images[0]}
+        // img2={rocket.flickr_images[1]}
       /> 
     }) : null
   }
 
   return (
-    <div>
+    <div id='rocket-div'>
       <h3>Rockets</h3>
       <div>{displayRockets()}</div>
     </div>
