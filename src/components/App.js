@@ -9,6 +9,7 @@ function App () {
   const [rockets, setRockets] = useState(false)
 
   useEffect(() => {
+    if(!rockets) {
       Axios({
       method: 'GET',
       url: `https://api.spacexdata.com/v3/rockets`
@@ -16,6 +17,7 @@ function App () {
         const result = JSON.stringify(response.data)
         setRockets(result)
       })
+    }
   })
 
   const handleShowRockets = () => {
