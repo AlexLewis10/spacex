@@ -6,13 +6,15 @@ import Axios from 'axios'
 function App () {
   const [showRockets, setShowRockets] = useState(false)
   const [showDragons, setShowDragons] = useState(false)
+  const [rockets, setRockets] = useState(false)
 
   useEffect(() => {
       Axios({
       method: 'GET',
       url: `https://api.spacexdata.com/v3/rockets`
     }).then(response => {
-        console.log(response.data)
+        const result = JSON.stringify(response.data)
+        setRockets(result)
       })
   })
 
