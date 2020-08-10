@@ -1,10 +1,20 @@
-import React, { useState }from 'react'
+import React, { useState, useEffect }from 'react'
 import Rockets from '../components/Rockets'
 import Dragons from './Dragons'
+import Axios from 'axios'
 
 function App () {
   const [showRockets, setShowRockets] = useState(false)
   const [showDragons, setShowDragons] = useState(false)
+
+  useEffect(() => {
+      Axios({
+      method: 'GET',
+      url: `https://api.spacexdata.com/v3/rockets`
+    }).then(response => {
+        console.log(response.data)
+      })
+  })
 
   const handleShowRockets = () => {
     setShowRockets(true)
@@ -15,6 +25,8 @@ function App () {
     setShowDragons(true)
     setShowRockets(false)
   }
+
+
 
   return (
     <div>
@@ -27,4 +39,4 @@ function App () {
   )
 }
 
-export default App;
+export default App
