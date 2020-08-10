@@ -1,12 +1,13 @@
 import React from 'react'
+import './Rocket.css'
 
 function Rocket ({ 
   name, 
   height, 
   mass, 
-  engines, 
-  fuel, 
-  fuel2, 
+  // engines, 
+  // fuel, 
+  // fuel2, 
   // wikipedia, 
   // description, 
   // img1, 
@@ -14,13 +15,13 @@ function Rocket ({
   }) {
 
   return (
-    <div>
+    <div className='rocket'>
       <p>{name}</p>
       <p>{height}</p>
       <p>{mass}</p>
-      <p>{engines}</p>
+      {/* <p>{engines}</p>
       <p>{fuel}</p>
-      <p>{fuel2}</p>
+      <p>{fuel2}</p> */}
       {/* <p>{wikipedia}</p>
       <p>{description}</p>
       <p>{img1}</p>
