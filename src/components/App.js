@@ -33,7 +33,6 @@ function App () {
     }
   })
 
-
   const handleShowRockets = () => {
     setShowRockets(true)
     setShowDragons(false)
@@ -44,14 +43,12 @@ function App () {
     setShowRockets(false)
   }
 
-
-
   return (
     <div>
       <h2>SpaceX</h2>
       <button id='Rockets' onClick={handleShowRockets}>Rockets</button>
       <button id='Dragons' onClick={handleShowDragons}>Dragons</button>
-      {showRockets ? <Rockets /> : null}
+      {showRockets ? <Rockets rockets={rockets} /> : null}
       {showDragons ? <Dragons /> : null}
     </div>
   )
