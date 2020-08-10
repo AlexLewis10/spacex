@@ -9,3 +9,4 @@ describe('Rockets', () => {
     expect(wrapper).toContainReact(<h3>Rockets</h3>)
   })
 })
+

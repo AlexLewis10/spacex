@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-function Rockets () {
+function Rockets ( { rockets } ) {
+  const [rocketsInfo, setRocketsInfo] = useState(null)
+
+  useEffect(() => {
+      setRocketsInfo(JSON.parse(rockets))
+    }, [rockets])
 
   return (
     <div>
