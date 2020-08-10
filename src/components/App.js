@@ -7,6 +7,7 @@ function App () {
   const [showRockets, setShowRockets] = useState(false)
   const [showDragons, setShowDragons] = useState(false)
   const [rockets, setRockets] = useState(false)
+  const [dragons, setDragons] = useState(false)
 
   useEffect(() => {
     if(!rockets) {
@@ -19,6 +20,19 @@ function App () {
       })
     }
   })
+
+  useEffect(() => {
+    if(!dragons) {
+      Axios({
+      method: 'GET',
+      url: `https://api.spacexdata.com/v3/dragons`
+    }).then(response => {
+        const result = JSON.stringify(response.data)
+        setDragons(result)
+      })
+    }
+  })
+
 
   const handleShowRockets = () => {
     setShowRockets(true)
