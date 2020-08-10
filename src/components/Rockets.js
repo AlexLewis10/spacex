@@ -11,6 +11,7 @@ function Rockets ( { rockets } ) {
   const displayRockets = () => {
     return rocketsInfo ? rocketsInfo.map((rocket) => { 
       return <Rocket 
+        key={rocket.rocket_name}
         name={rocket.rocket_name}
         height={rocket.height.meters}
         mass={rocket.mass.kg}
