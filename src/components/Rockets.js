@@ -45,10 +45,13 @@ function Rockets ( { rockets } ) {
   }
 
   return (
-    <div className='grid-container'>
-      {/* <h3>Rockets</h3> */}
-      {displayRockets()}
-      { fullView ? fullView : null }
+    <div>
+      <div className='grid-container'>
+        {displayRockets()}
+      </div>
+      <div className='full-view-container'>
+        { fullView ? fullView : null }
+      </div>
     </div>
   )
 }
