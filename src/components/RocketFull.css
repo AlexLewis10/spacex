@@ -1,0 +1,10 @@
+.full-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.full-info {
+  margin-left: 5%;
+  text-align: left;
+}
