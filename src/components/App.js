@@ -28,6 +28,7 @@ function App () {
       method: 'GET',
       url: `https://api.spacexdata.com/v3/dragons`
     }).then(response => {
+        console.log(response)
         const result = JSON.stringify(response.data)
         setDragons(result)
       })
@@ -64,7 +65,7 @@ function App () {
       </div>
       <div id='main-body'>
         {showRockets ? <Rockets rockets={rockets} /> : null}
-        {showDragons ? <Dragons /> : null}
+        {showDragons ? <Dragons dragons={dragons} /> : null}
       </div>
     </div>
   )
