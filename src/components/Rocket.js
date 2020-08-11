@@ -17,9 +17,11 @@ function Rocket (props) {
       backgroundSize: 'cover',
     }} 
     className='rocket'>
-      <p className='rocket-info'>Name: {props.name}</p>
-      <p className='rocket-info'>Height: {props.height}m</p>
-      <p className='rocket-info'>Mass: {props.mass}kg</p>
+      <div className='rocket-info'>
+        <p >Name: {props.name}</p>
+        <p >Height: {props.height}m</p>
+        <p >Mass: {props.mass}kg</p>
+      </div>
       <button className='more-info' onClick={displayFullView}
         >More info
       </button>
