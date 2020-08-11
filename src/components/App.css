@@ -28,7 +28,7 @@ h2 {
 
 .select-btn {
   height: 100%;
-  width: 50%;
+  width: 49%;
   font-family: Verdana, Geneva, sans-serif;
   background-color: #bdd5ea; 
   color: #495867;
@@ -38,7 +38,16 @@ h2 {
   font-size: 20px;
   outline: none;
   transition-duration: 0.2s;
-  border-radius: 25px;
+  border-radius: 35px;
+}
+
+#Rockets {
+  margin-right: 2.5px;
+  margin-left: 0;
+}
+
+#Dragons {
+  margin-left: 2.5px;
 }
 
 .select-btn:hover {
