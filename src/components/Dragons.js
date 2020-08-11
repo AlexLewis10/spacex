@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Dragon from './Dragon'
+import DragonFull from './DragonFull'
 
 
 function Dragons ( { dragons }) {

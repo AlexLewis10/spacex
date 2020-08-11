@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 function Dragon (props) {
 
   const displayFullView = () => {
-    props.getFullRocketInfo(props.name)
+    props.getFullDragonInfo(props.name)
   }
 
   return (
