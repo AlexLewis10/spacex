@@ -8,11 +8,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: pink;
   height: 80vh;
+  grid-gap: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .full-view-container {
-  background-color: red;
+  background-color: #bdd5ea;
   height: 60vh;
+  border-radius: 35px;
 }
