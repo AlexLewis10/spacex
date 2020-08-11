@@ -7,18 +7,14 @@ function Rocket (props) {
     props.getFullRocketInfo(props.name)
   }
 
-  const getUrl = () => {
-    
-    return props.img 
-  }
   return (
     <div style={{
       backgroundImage: `url(${props.img})`,
       backgroundSize: 'cover',
     }} 
-    className='rocket'>
+      className='rocket'>
       <div className='rocket-info'>
-        <p >Name: {props.name}</p>
+        <p >{props.name}</p>
         <p >Height: {props.height}m</p>
         <p >Mass: {props.mass}kg</p>
       </div>
