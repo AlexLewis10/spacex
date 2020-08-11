@@ -2,7 +2,9 @@
 
 http://spacex-project.surge.sh/
 
-A project which accesses and displays information about SpaceX rockets and dragons using their API.
+A project which accesses and displays information about SpaceX Rockets and Dragons using their API.
+
+https://docs.spacexdata.com/?version=latest
 
 ### Requirements
 - Fetch and render a list of rockets or dragons from SpaceX's API.
