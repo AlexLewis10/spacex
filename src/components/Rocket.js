@@ -3,15 +3,8 @@ import './Rocket.css'
 
 function Rocket (props) {
 
-  const [fullView, setFullView] = useState(false)
-
   const displayFullView = () => {
-    setFullView(true)
     props.getFullRocketInfo(props.name)
-  }
-
-  const showFullView = () => {
-    return <p>Hello</p>
   }
 
   return (
@@ -20,7 +13,6 @@ function Rocket (props) {
       <p>{props.height}</p>
       <p>{props.mass}</p>
       <button onClick={displayFullView}>More info</button>
-      { fullView ? showFullView() : null }
     </div>
   )
 }
