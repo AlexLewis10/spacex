@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Dragon from './Dragon'
 
 
 function Dragons ( { dragons }) {
@@ -11,9 +12,9 @@ function Dragons ( { dragons }) {
   const displayDragons = () => {
     return dragonsInfo ? dragonsInfo.map((dragon) => { 
       return <Dragon 
-        key={dragon.dragon_name}
-        name={dragon.dragon_name}
-        height={dragon.height.meters}
+        key={dragon.name}
+        name={dragon.name}
+        height={dragon.height_w_trunk.meters}
         payload={dragon.launch_payload_mass.kg}
         img={dragon.flickr_images[0]}
         // getFulldragonInfo={getFulldragonInfo}

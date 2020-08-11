@@ -1,12 +1,6 @@
-import React, { useState } from 'react'
-import './Rocket.css'
-import { Link } from 'react-scroll'
+import React from 'react'
 
-function Rocket (props) {
-
-  const displayFullView = () => {
-    props.getFullRocketInfo(props.name)
-  }
+function Dragon (props) {
 
   return (
     <div style={{
@@ -16,17 +10,17 @@ function Rocket (props) {
       className='rocket'>
       <div className='rocket-info'>
         <p >{props.name}</p>
-        <p >Height: {props.height.meters}m</p>
-        <p >Mass: {props.mass}kg</p>
+        <p >Height: {props.height}m</p>
+        <p >Payload: {props.payload}kg</p>
       </div>
-      <Link 
+      {/* <Link 
         className='more-info' 
         to='full' smooth={true} 
         duration={1500} onClick={displayFullView}>
         More info
-      </Link>
+      </Link> */}
     </div>
   )
 }
 
-export default Rocket
+export default Dragon
