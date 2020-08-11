@@ -1,10 +1,16 @@
 .rocket {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: #bdd5ea;
-  height: 100%;
-  width: 100%;
   border-radius: 35px;
 }
 
 .rocket:hover {
   background-color: white;
+}
+
+.rocket-info {
+  margin-left: 5%;
+  text-align: left;
 }

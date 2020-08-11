@@ -9,9 +9,9 @@ function Rocket (props) {
 
   return (
     <div className='rocket'>
-      <p>{props.name}</p>
-      <p>{props.height}</p>
-      <p>{props.mass}</p>
+      <p className='rocket-info'>Name: {props.name}</p>
+      <p className='rocket-info'>Height: {props.height}m</p>
+      <p className='rocket-info'>Mass: {props.mass}kg</p>
       <button onClick={displayFullView}>More info</button>
     </div>
   )
