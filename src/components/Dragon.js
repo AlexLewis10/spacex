@@ -1,6 +1,11 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 function Dragon (props) {
+
+  const displayFullView = () => {
+    props.getFullRocketInfo(props.name)
+  }
 
   return (
     <div style={{
@@ -13,12 +18,12 @@ function Dragon (props) {
         <p >Height: {props.height}m</p>
         <p >Payload: {props.payload}kg</p>
       </div>
-      {/* <Link 
+      <Link 
         className='more-info' 
         to='full' smooth={true} 
         duration={1500} onClick={displayFullView}>
         More info
-      </Link> */}
+      </Link>
     </div>
   )
 }

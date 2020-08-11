@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Rocket.css'
 import { Link } from 'react-scroll'
+//remove useState if not used
 
 function Rocket (props) {
 
