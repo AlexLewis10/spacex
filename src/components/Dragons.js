@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-function Dragons () {
+
+function Dragons ( { dragons }) {
+  const [dragonsInfo, setDragonsInfo] = useState(null)
+  
+  useEffect(() => {
+  setDragonsInfo(JSON.parse(dragons))
+  }, [dragons])
+  
   return (
   <div>
-    <h3>Dragons</h3>
+    
   </div>
   )
 }
