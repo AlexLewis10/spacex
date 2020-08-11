@@ -1,5 +1,7 @@
 ## SpaceX - In progress
 
+**INSERT LINK TO DEPLOYED WEBSITE**
+
 A project which accesses and displays information about SpaceX rockets and dragons using their API.
 
 ### Requirements
@@ -15,12 +17,11 @@ I started by first drawing a rough diagram of how I wanted the UI to look to hel
 
 ![alt text](https://github.com/AlexLewis10/spacex/blob/master/img/ui-mock-up.png)
 
-I then drew a diagram to get a better understanding of how my different components would fit together.
+I drew a diagram to get a better understanding of how my different components would fit together.
 
 ![alt-text](https://github.com/AlexLewis10/spacex/blob/master/img/component.png)
 
-Didn't anticipate - difficulty passing array down to component.
-
+I started first with the header of the page before moving down to build the rockets, rocket, and rocketfull components. Following this I worked on the UI and finally I was able to reuse most of the code I had already written for rockets to quickly build the dragons componenents with a few minor adjustments to the JS and the CSS.
 
 ### Tech
 | | |
