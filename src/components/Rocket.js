@@ -14,7 +14,7 @@ function Rocket (props) {
       backgroundSize: 'cover',
     }} 
       className='rocket'>
-      <div className='rocket-info'>
+      <div className='rocket-info'> 
         <p >{props.name}</p>
         <p >Height: {props.height.meters}m</p>
         <p >Mass: {props.mass}kg</p>
