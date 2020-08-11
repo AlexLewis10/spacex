@@ -19,3 +19,8 @@
   height: 60vh;
   border-radius: 35px;
 }
+
+#dragon-grid {
+  grid-template-rows: 1fr;
+  height: 40vh;
+}

@@ -59,7 +59,7 @@ function Dragons ( { dragons }) {
   
   return (
   <div>
-    <div className='grid-container'>
+    <div id='dragon-grid' className='grid-container'>
       {displayDragons()}
     </div>
     <div id='full'>
