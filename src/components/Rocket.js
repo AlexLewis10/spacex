@@ -19,10 +19,12 @@ function Rocket (props) {
         <p >Height: {props.height}m</p>
         <p >Mass: {props.mass}kg</p>
       </div>
-      <Link to='full' smooth={true} duration={1000}>
-        <button className='more-info' onClick={displayFullView}>
-          More info
-        </button>
+      <Link 
+        className='more-info' 
+        to='full' smooth={true} 
+        duration={1500} 
+        onClick={displayFullView}>
+        More info
       </Link>
     </div>
   )

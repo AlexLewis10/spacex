@@ -63,7 +63,7 @@ function Rockets ( { rockets } ) {
       <div className='grid-container'>
         {displayRockets()}
       </div>
-      <div>
+      <div id='full'>
         {fullViewDiv()}
       </div>
           {/* // <div className='full-view-container'>

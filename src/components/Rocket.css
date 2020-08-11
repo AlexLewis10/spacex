@@ -21,6 +21,9 @@
 
 .more-info {
     align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: auto;
     margin-bottom: 5%;
     margin-right: 5%;
@@ -30,6 +33,7 @@
     outline: none;
     background-color: #577399;
     color: #f7f7ff;
+    font-size: 15px;
     border: none;
     transition-duration: 0.2s;
 }
