@@ -6,14 +6,18 @@ import RocketFull from './RocketFull'
 function Rockets ( { rockets } ) {
   const [rocketsInfo, setRocketsInfo] = useState(null)
   const [fullView, setFullView] = useState(false)
+  const [showFullView, setShowFullView] = useState(false)
 
   useEffect(() => {
     setRocketsInfo(JSON.parse(rockets))
     }, [rockets])
 
   const getFullRocketInfo = (name) => {
+    
     rocketsInfo.filter((rocket) => {
+
       if (rocket.rocket_name === name) {
+        setShowFullView(true)
         setFullView(<RocketFull 
           key={rocket.rocket_name}
           name={rocket.rocket_name}
@@ -45,14 +49,27 @@ function Rockets ( { rockets } ) {
     }) : null
   }
 
+  const fullViewDiv = () => {
+    if (showFullView) {
+      return (
+        <div className='full-view-container'>
+          {fullView}
+        </div>
+      )
+    }
+  }
+
   return (
     <div>
       <div className='grid-container'>
         {displayRockets()}
       </div>
-      <div className='full-view-container'>
-        { fullView ? fullView : null }
+      <div>
+        {fullViewDiv()}
       </div>
+          {/* // <div className='full-view-container'>
+      //   {fullView}
+      // </div> */}
     </div>
   )
 }
