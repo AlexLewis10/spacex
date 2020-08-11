@@ -66,9 +66,6 @@ function Rockets ( { rockets } ) {
       <div id='full'>
         {fullViewDiv()}
       </div>
-          {/* // <div className='full-view-container'>
-      //   {fullView}
-      // </div> */}
     </div>
   )
 }
