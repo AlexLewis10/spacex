@@ -13,9 +13,11 @@ A project which accesses and displays information about SpaceX rockets and drago
 ### Approach
 I started by first drawing a rough diagram of how I wanted the UI to look to help me better understanding of the layout I wanted to achieve.
 
-••Instert Image **
+![alt text](https://github.com/AlexLewis10/spacex/blob/master/img/ui-mock-up.png)
 
 I then drew a diagram to get a better understanding of how my different components would fit together.
+
+![alt-text](https://github.com/AlexLewis10/spacex/blob/master/img/component.png)
 
 Didn't anticipate - difficulty passing array down to component.
 
