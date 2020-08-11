@@ -14,7 +14,7 @@ function RocketFull ({
 }) {
 
   return(
-    <div className='full-view'>
+    <div id='full' className='full-view'>
       <p className='full-info'>{name}</p>
       <p className='full-info'>Height: {height}m</p>
       <p className='full-info'>Mass: {mass}kg</p>

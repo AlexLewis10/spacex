@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Rocket.css'
+import { Link } from 'react-scroll'
 
 function Rocket (props) {
 
@@ -18,9 +19,11 @@ function Rocket (props) {
         <p >Height: {props.height}m</p>
         <p >Mass: {props.mass}kg</p>
       </div>
-      <button className='more-info' onClick={displayFullView}
-        >More info
-      </button>
+      <Link to='full' smooth={true} duration={1000}>
+        <button className='more-info' onClick={displayFullView}>
+          More info
+        </button>
+      </Link>
     </div>
   )
 }

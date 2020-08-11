@@ -13,11 +13,10 @@ function Rockets ( { rockets } ) {
     }, [rockets])
 
   const getFullRocketInfo = (name) => {
-    
+    setShowFullView(true)
+    //Take a look at this method, refactor and remove unused stuff
     rocketsInfo.filter((rocket) => {
-
       if (rocket.rocket_name === name) {
-        setShowFullView(true)
         setFullView(<RocketFull 
           key={rocket.rocket_name}
           name={rocket.rocket_name}

@@ -10,7 +10,8 @@
     "enzyme-wait": "^1.0.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-scroll": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
