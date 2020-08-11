@@ -1,6 +1,6 @@
 ## SpaceX - In progress
 
-**INSERT LINK TO DEPLOYED WEBSITE**
+http://spacex-project.surge.sh/
 
 A project which accesses and displays information about SpaceX rockets and dragons using their API.
 
@@ -39,8 +39,6 @@ I started first with the header of the page before moving down to build the rock
 - Clone the repo and open in your favorite code editor
 - Run npm install
 - Run npm start to see the app locally
-
-
 
 
 
