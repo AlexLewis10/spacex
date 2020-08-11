@@ -23,4 +23,9 @@
     background-color: #577399;
     color: #f7f7ff;
     border: none;
+    transition-duration: 0.2s;
+}
+
+.more-info:hover {
+  background-color: #495867;
 }
