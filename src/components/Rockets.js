@@ -39,6 +39,7 @@ function Rockets ( { rockets } ) {
         name={rocket.rocket_name}
         height={rocket.height.meters}
         mass={rocket.mass.kg}
+        img={rocket.flickr_images[0]}
         getFullRocketInfo={getFullRocketInfo}
       /> 
     }) : null
