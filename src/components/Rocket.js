@@ -12,7 +12,10 @@ function Rocket (props) {
     return props.img 
   }
   return (
-    <div style={{backgroundImage: `url(${props.img})`}} 
+    <div style={{
+      backgroundImage: `url(${props.img})`,
+      backgroundSize: 'cover',
+    }} 
     className='rocket'>
       <p className='rocket-info'>Name: {props.name}</p>
       <p className='rocket-info'>Height: {props.height}m</p>
