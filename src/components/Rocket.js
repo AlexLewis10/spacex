@@ -12,7 +12,9 @@ function Rocket (props) {
       <p className='rocket-info'>Name: {props.name}</p>
       <p className='rocket-info'>Height: {props.height}m</p>
       <p className='rocket-info'>Mass: {props.mass}kg</p>
-      <button onClick={displayFullView}>More info</button>
+      <button className='more-info' onClick={displayFullView}
+        >More info
+      </button>
     </div>
   )
 }

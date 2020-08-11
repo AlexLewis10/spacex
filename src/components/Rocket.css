@@ -14,3 +14,17 @@
   margin-left: 5%;
   text-align: left;
 }
+
+.more-info {
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    width: 20%;
+    height: 20%;
+    border-radius: 35px;
+    outline: none;
+    background-color: #577399;
+    color: #f7f7ff;
+    border: none;
+}
