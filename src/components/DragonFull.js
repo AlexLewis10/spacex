@@ -21,7 +21,7 @@ function DragonFull ( {
         <p className='full-info'>Heat shield resistant to {heatShield}°C</p>
         <p className='full-info'>Fuel 1: {fuel}</p>
         <p className='full-info'>Fuel 2: {fuel2}</p>
-        <p className='full-info'>Description: {description}</p>
+        <p className='full-info'>{description}</p>
         <a className='full-info' href={wikipedia}>Wiki</a>
         <img className='rocket-img' src={`${img2}`} alt={name}></img>
       </div>
