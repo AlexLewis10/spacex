@@ -2,9 +2,20 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
 }
 
 .full-info {
   margin-left: 5%;
   text-align: left;
+  width: 50%;
+}
+
+.rocket-img {
+  align-self: flex-end;
+  width: 40%;
+  height: 38%;
+  border: 35px;
+  position: absolute;
+  border-radius: 8%;
 }
