@@ -24,8 +24,6 @@ function RocketFull ({
       <p className='full-info'>Description: {description}</p>
       <a className='full-info' href={wikipedia}>Wiki</a>
       <img className='rocket-img' src={`${img2}`} alt={name}></img>
-      {/* <p className='full-info'>More info: {wikipedia}</p> */}
-      {/* <p className='full-info'>>{img2}</p> */}
     </div>
   )
 }
