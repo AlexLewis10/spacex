@@ -1,6 +1,6 @@
 ## SpaceX - In progress
 
-http://spacex-project.surge.sh/
+http://spacex-ships.surge.sh/
 
 A project which accesses and displays information about SpaceX Rockets and Dragons using their API.
 
