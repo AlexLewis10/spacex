@@ -1,5 +1,5 @@
 import React from 'react'
-import './RocketFull.css'
+import './VehicleMoreInfo.css'
 
 function RocketMoreInfo ({
   name, 

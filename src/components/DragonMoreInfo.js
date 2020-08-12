@@ -1,4 +1,5 @@
 import React from 'react'
+import './VehicleMoreInfo.css'
 
 function DragonMoreInfo ( {
   name,
