@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
+import './Vehicle.css'
 
 function Dragon (props) {
 

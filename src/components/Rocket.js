@@ -1,5 +1,5 @@
 import React from 'react'
-import './Rocket.css'
+import './Vehicle.css'
 import { Link } from 'react-scroll'
 
 function Rocket (props) {
