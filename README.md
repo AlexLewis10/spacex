@@ -15,11 +15,11 @@ https://docs.spacexdata.com/?version=latest
 - A single item view with an extended description (containing an image, name, etc.)
 
 ### Approach
-I started by first drawing a rough diagram of how I wanted the UI to look to help me better understanding of the layout I wanted to achieve.
+I started by first drawing a rough diagram of how I wanted the UI to look to help me better understand of the layout I wanted to achieve.
 
 ![alt text](https://github.com/AlexLewis10/spacex/blob/master/img/ui-mock-up.png)
 
-I drew a diagram to get a better understanding of how my different components would fit together.
+I then drew a diagram to get a better understanding of how my different components would fit together.
 
 ![alt-text](https://github.com/AlexLewis10/spacex/blob/master/img/component.png)
 
