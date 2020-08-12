@@ -5,18 +5,18 @@ import DragonFull from './DragonFull'
 
 function Dragons ( { dragons }) {
   const [dragonsInfo, setDragonsInfo] = useState(null)
-  const [fullView, setFullView] = useState(false)
-  const [showFullView, setShowFullView] = useState(false)
+  const [moreInfo, setMoreInfo] = useState(false)
+  const [showMoreInfo, setShowMoreInfo] = useState(false)
   
   useEffect(() => {
   setDragonsInfo(JSON.parse(dragons))
   }, [dragons])
 
   const getFullDragonInfo = (name) => {
-    setShowFullView(true)
+    setShowMoreInfo(true)
     dragonsInfo.filter((dragon) => {
       if (dragon.name === name) {
-        setFullView(<DragonFull 
+        setMoreInfo(<DragonFull 
           key={dragon.name}
           name={dragon.name}
           height={dragon.height_w_trunk.meters}
@@ -46,11 +46,11 @@ function Dragons ( { dragons }) {
     }) : null
   }
 
-  const fullViewDiv = () => {
-    if (showFullView) {
+  const moreInfoDiv = () => {
+    if (showMoreInfo) {
       return (
         <div className='full-view-container'>
-          {fullView}
+          {moreInfo}
         </div>
       )
     }
@@ -62,7 +62,7 @@ function Dragons ( { dragons }) {
       {displayDragons()}
     </div>
     <div id='react-scroll-target'>
-        {fullViewDiv()}
+        {moreInfoDiv()}
       </div>
   </div>
   )
