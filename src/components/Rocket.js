@@ -12,7 +12,7 @@ function Rocket (props) {
     <div style={{
       backgroundImage: `url(${props.img})`,
       backgroundSize: 'cover',
-    }} 
+      }} 
       className='rocket'>
       <div className='rocket-info'> 
         <p >{props.name}</p>

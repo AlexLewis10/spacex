@@ -46,7 +46,7 @@ function App () {
 
   return (
     <div>
-      <div id='landing-section'>
+      <div id='header'>
         <h2>SpaceX</h2>
         <div id='navbar'>
           <button 

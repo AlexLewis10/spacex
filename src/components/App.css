@@ -8,7 +8,7 @@ body {
     height: 100vh;
 }
 
-#landing-section {
+#header {
   display: flex;
   flex-direction: column;
   height: 20vh;

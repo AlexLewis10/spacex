@@ -14,7 +14,6 @@ function Dragons ( { dragons }) {
 
   const getFullDragonInfo = (name) => {
     setShowFullView(true)
-    //Take a look at this method, refactor and remove unused stuff
     dragonsInfo.filter((dragon) => {
       if (dragon.name === name) {
         setFullView(<DragonFull 
