@@ -14,7 +14,6 @@ function Rockets ( { rockets } ) {
 
   const getFullRocketInfo = (name) => {
     setShowFullView(true)
-    //Take a look at this method, refactor and remove unused stuff
     rocketsInfo.filter((rocket) => {
       if (rocket.rocket_name === name) {
         setFullView(<RocketFull 
@@ -27,7 +26,6 @@ function Rockets ( { rockets } ) {
           fuel2={rocket.engines.propellant_2}
           wikipedia={rocket.wikipedia}
           description={rocket.description}
-          img1={rocket.flickr_images[0]}
           img2={rocket.flickr_images[1]}
         />)
       }
