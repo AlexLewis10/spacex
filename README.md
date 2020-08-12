@@ -1,4 +1,4 @@
-## SpaceX - In progress
+## SpaceX
 
 http://spacex-ships.surge.sh/
 
