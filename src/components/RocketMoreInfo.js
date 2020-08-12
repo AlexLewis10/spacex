@@ -1,7 +1,7 @@
 import React from 'react'
 import './RocketFull.css'
 
-function RocketFull ({
+function RocketMoreInfo ({
   name, 
   height, 
   mass,
@@ -28,4 +28,4 @@ function RocketFull ({
   )
 }
 
-export default RocketFull
+export default RocketMoreInfo

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Rockets.css'
 import Rocket from './Rocket'
-import RocketFull from './RocketFull'
+import RocketMoreInfo from './RocketMoreInfo'
 
 function Rockets ( { rockets } ) {
   const [rocketsInfo, setRocketsInfo] = useState(null)
@@ -16,7 +16,7 @@ function Rockets ( { rockets } ) {
     setShowMoreInfo(true)
     rocketsInfo.filter((rocket) => {
       if (rocket.rocket_name === name) {
-        setMoreInfo(<RocketFull 
+        setMoreInfo(<RocketMoreInfo
           key={rocket.rocket_name}
           name={rocket.rocket_name}
           height={rocket.height.meters}
