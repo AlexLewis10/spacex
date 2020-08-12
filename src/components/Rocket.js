@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 
 function Rocket (props) {
 
-  const displayFullView = () => {
+  const displayMoreInfo = () => {
     props.getFullRocketInfo(props.name)
   }
 
@@ -24,7 +24,7 @@ function Rocket (props) {
         to='react-scroll-target'
         smooth={true} 
         duration={1500} 
-        onClick={displayFullView}>
+        onClick={displayMoreInfo}>
         More info
       </Link>
     </div>
