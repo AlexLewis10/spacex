@@ -20,8 +20,10 @@ function Dragon (props) {
       </div>
       <Link 
         className='more-info' 
-        to='react-scroll-target' smooth={true} 
-        duration={1500} onClick={displayFullView}>
+        to='react-scroll-target' 
+        smooth={true} 
+        duration={1500} 
+        onClick={displayFullView}>
         More info
       </Link>
     </div>
