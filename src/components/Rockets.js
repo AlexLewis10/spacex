@@ -61,7 +61,7 @@ function Rockets ( { rockets } ) {
       <div className='grid-container'>
         {displayRockets()}
       </div>
-      <div id='full'>
+      <div id='react-scroll-target'>
         {fullViewDiv()}
       </div>
     </div>

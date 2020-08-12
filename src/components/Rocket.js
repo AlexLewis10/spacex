@@ -21,7 +21,7 @@ function Rocket (props) {
       </div>
       <Link 
         className='more-info' 
-        to='full' smooth={true} 
+        to='react-scroll-target' smooth={true} 
         duration={1500} onClick={displayFullView}>
         More info
       </Link>

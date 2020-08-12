@@ -61,7 +61,7 @@ function Dragons ( { dragons }) {
     <div id='dragon-grid' className='grid-container'>
       {displayDragons()}
     </div>
-    <div id='full'>
+    <div id='react-scroll-target'>
         {fullViewDiv()}
       </div>
   </div>
