@@ -50,12 +50,12 @@ function App () {
         <h2>SpaceX</h2>
         <div id='navbar'>
           <button 
-            className='select-btn' 
+            className='select-vehicle-btn' 
             id='Rockets' onClick={handleShowRockets}
             >Rockets
           </button>
           <button 
-            className='select-btn' 
+            className='select-vehicle-btn' 
             id='Dragons' 
             onClick={handleShowDragons}
             >Dragons
