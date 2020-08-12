@@ -5,18 +5,18 @@ import RocketFull from './RocketFull'
 
 function Rockets ( { rockets } ) {
   const [rocketsInfo, setRocketsInfo] = useState(null)
-  const [fullView, setFullView] = useState(false)
-  const [showFullView, setShowFullView] = useState(false)
+  const [moreInfo, setMoreInfo] = useState(false)
+  const [showMoreInfo, setShowMoreInfo] = useState(false)
 
   useEffect(() => {
     setRocketsInfo(JSON.parse(rockets))
     }, [rockets])
 
   const getFullRocketInfo = (name) => {
-    setShowFullView(true)
+    setShowMoreInfo(true)
     rocketsInfo.filter((rocket) => {
       if (rocket.rocket_name === name) {
-        setFullView(<RocketFull 
+        setMoreInfo(<RocketFull 
           key={rocket.rocket_name}
           name={rocket.rocket_name}
           height={rocket.height.meters}
@@ -46,11 +46,11 @@ function Rockets ( { rockets } ) {
     }) : null
   }
 
-  const fullViewDiv = () => {
-    if (showFullView) {
+  const moreInfoDiv = () => {
+    if (showMoreInfo) {
       return (
         <div className='full-view-container'>
-          {fullView}
+          {moreInfo}
         </div>
       )
     }
@@ -62,7 +62,7 @@ function Rockets ( { rockets } ) {
         {displayRockets()}
       </div>
       <div id='react-scroll-target'>
-        {fullViewDiv()}
+        {moreInfoDiv()}
       </div>
     </div>
   )
