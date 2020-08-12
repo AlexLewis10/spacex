@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 
 function Dragon (props) {
 
-  const displayFullView = () => {
+  const displayMoreInfo = () => {
     props.getFullDragonInfo(props.name)
   }
 
@@ -23,7 +23,7 @@ function Dragon (props) {
         to='react-scroll-target' 
         smooth={true} 
         duration={1500} 
-        onClick={displayFullView}>
+        onClick={displayMoreInfo}>
         More info
       </Link>
     </div>
