@@ -1,6 +1,7 @@
 import React, { useState, useEffect }from 'react'
 import Rockets from '../components/Rockets'
 import Dragons from './Dragons'
+import NavButton from './NavButton'
 import Axios from 'axios'
 import './App.css'
 
@@ -47,19 +48,10 @@ function App () {
   return (
     <div>
       <div id='header'>
-        <h2>SpaceX</h2>
+        <h2>SpaceX</h2> 
         <div id='navbar'>
-          <button 
-            className='select-vehicle-btn' 
-            id='Rockets' onClick={handleShowRockets}
-            >Rockets
-          </button>
-          <button 
-            className='select-vehicle-btn' 
-            id='Dragons' 
-            onClick={handleShowDragons}
-            >Dragons
-          </button>
+          <NavButton vehicle={'Rockets'} handleShowVehicle={handleShowRockets}/>
+          <NavButton vehicle={'Dragons'} handleShowVehicle={handleShowDragons}/>
         </div>
       </div>
       <div id='main-body'>
