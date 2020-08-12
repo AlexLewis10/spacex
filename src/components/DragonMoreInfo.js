@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DragonFull ( {
+function DragonMoreInfo ( {
   name,
   height,
   payload,
@@ -28,4 +28,4 @@ function DragonFull ( {
   )
 }
 
-export default DragonFull
+export default DragonMoreInfo

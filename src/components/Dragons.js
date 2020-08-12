@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Dragon from './Dragon'
-import DragonFull from './DragonFull'
+import DragonMoreInfo from './DragonMoreInfo'
 
 
 function Dragons ( { dragons }) {
@@ -16,7 +16,7 @@ function Dragons ( { dragons }) {
     setShowMoreInfo(true)
     dragonsInfo.filter((dragon) => {
       if (dragon.name === name) {
-        setMoreInfo(<DragonFull 
+        setMoreInfo(<DragonMoreInfo
           key={dragon.name}
           name={dragon.name}
           height={dragon.height_w_trunk.meters}
