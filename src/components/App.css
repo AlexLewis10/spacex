@@ -35,12 +35,11 @@ h2 {
   color: #495867;
   border: solid;
   border-color: white;
-  border-radius: 1px;
   text-align: center;
   text-decoration: none;
   outline: none;
   transition-duration: 0.2s;
-  border-radius: 35px;
+  border-radius: 2.5em;
   font-size: 1.1rem;
 }
 
@@ -49,13 +48,11 @@ h2 {
 }
 
 #Rockets {
-  margin-right: 2.25px;
-  margin-left: 0px;
+  /* deleted styles but left in place for future use */
 }
 
 #Dragons {
-  margin-left: 2.25px;
-  margin-right: 0px;
+  /* deleted styles but left in place for future use */
 }
 
 #main-body {
