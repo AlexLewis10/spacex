@@ -47,6 +47,14 @@ For the main development work, I started with the header of the page before movi
 - Run npm start to see the app locally
 
 
+### Todo
+- Fix broken tests
+- Deploy using Travis
+- Rework CSS to be responsive.
+
+Link to color palette: https://coolors.co/495867-577399-bdd5ea-f7f7ff-fe5f55
+
+
 
 
 
