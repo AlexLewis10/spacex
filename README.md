@@ -48,10 +48,11 @@ For the main development work, I started with the header of the page before movi
 
 
 ### Todo
-- Fix height and engine problem.
+- Fix engine problem.
 - Fix broken tests
 - Deploy using Travis
 - Rework CSS to be responsive.
+- Adjust text in full-info section to be responsive particuarly for small screen sizes.
 
 Link to color palette: https://coolors.co/495867-577399-bdd5ea-f7f7ff-fe5f55
 
