@@ -6,16 +6,15 @@
 }
 
 .full-info {
-  margin-left: 5%;
+  margin-left: 2.5em;
   text-align: left;
-  width: 70%;
+  width: 45%;
 }
 
 .rocket-img {
   align-self: flex-end;
   width: 40%;
-  height: 38%;
-  border: 35px;
+  height: auto;
   position: absolute;
-  border-radius: 8%;
+  border-radius: 2.5em;
 }
