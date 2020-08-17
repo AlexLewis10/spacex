@@ -15,9 +15,9 @@ function Rocket (props) {
       }} 
       className='rocket'>
       <div className='rocket-info'> 
-        <p >{props.name}</p>
-        <p >Height: {props.height}m</p>
-        <p >Mass: {props.mass}kg</p>
+        <p>{props.name}</p>
+        <p>Height: {props.height}m</p>
+        <p>Mass: {props.mass}kg</p>
       </div>
       <Link 
         className='more-info' 
